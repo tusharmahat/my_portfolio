@@ -1,6 +1,6 @@
 import React from "react"
 import { FaBars, FaTimes, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
-import { BsFillPersonLinesFill } from "react-icons/bs"
+// import { BsFillPersonLinesFill } from "react-icons/bs"
 import Logo from "../assets/logo.png"
 import { Link } from 'react-scroll'
 
@@ -76,11 +76,11 @@ const Navbar = ({ mobileNavOpen, handleHamBurgClick }) => {
                         <a href="https://github.com/tusharmahat" className="w-full flex justify-between items-center">Github<FaGithub size={30} /></a>
                     </li>
                     <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#DADAD9]">
-                        <a href="/" className="w-full flex justify-between items-center text-black">Email<FaEnvelope size={30} /></a>
+                        <a href="mailto:tusharmahat@gmail.com" className="w-full flex justify-between items-center text-black">Email<FaEnvelope size={30} /></a>
                     </li>
-                    <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#468189]">
+                    {/* <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#468189]">
                         <a href="/" className="w-full flex justify-between items-center">Resume<BsFillPersonLinesFill size={30} /></a>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
         </div>
