@@ -4,7 +4,7 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/f
 import Logo from "../assets/logo.png"
 import { Link } from 'react-scroll'
 
-const Navbar = ({ mobileNavOpen, handleHamBurgClick }) => {
+const Nav = ({ mobileNavOpen, handleHamBurgClick }) => {
     return (
         <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#202329] text-[#D9D9D9] z-50">
             <div className="cursor-pointer">
@@ -15,19 +15,19 @@ const Navbar = ({ mobileNavOpen, handleHamBurgClick }) => {
 
             {/* Menu */}
             <ul className="hidden md:flex">
-                <li><Link to="home" smooth={true} duration={500} >
+                <li className="border-2 rounded-md py-1 hover:text-[#202329] border-[#202329] hover:bg-[#D9D9D9] hover:border-[#D9D9D9]"><Link to="home" smooth={true} duration={500} >
                     Home
                 </Link></li>
-                <li><Link to="about" smooth={true} duration={500} >
+                <li className="border-2 rounded-md ml-1 py-1 hover:text-[#202329] border-[#202329] hover:bg-[#D9D9D9] hover:border-[#D9D9D9]"><Link to="about" smooth={true} duration={500} >
                     About
                 </Link></li>
-                <li><Link to="projects" smooth={true} duration={500} >
+                <li className="border-2 rounded-md ml-1 py-1 hover:text-[#202329] border-[#202329] hover:bg-[#D9D9D9] hover:border-[#D9D9D9]"><Link to="projects" smooth={true} duration={500} >
                     Projects
                 </Link></li>
-                <li><Link to="skills" smooth={true} duration={500} >
+                <li className="border-2 rounded-md ml-1 py-1 hover:text-[#202329] border-[#202329] hover:bg-[#D9D9D9] hover:border-[#D9D9D9]"><Link to="skills" smooth={true} duration={500} >
                     Skills
                 </Link></li>
-                <li><Link to="contact" smooth={true} duration={500} >
+                <li className="border-2 rounded-md ml-1 py-1 hover:text-[#202329] border-[#202329] hover:bg-[#D9D9D9] hover:border-[#D9D9D9]"><Link to="contact" smooth={true} duration={500} >
                     Contact
                 </Link></li>
             </ul>
@@ -39,27 +39,27 @@ const Navbar = ({ mobileNavOpen, handleHamBurgClick }) => {
 
             {/* Mobile Menu */}
             <ul className={mobileNavOpen ? "absolute top-0 left-0 w-full h-screen bg-[#202329] flex flex-col justify-center items-center" : "hidden"}>
-                <li className="py-6 text-4xl">
+                <li className="py-6 text-4xl border-2 rounded-md py-1 hover:text-[#202329] border-[#202329] hover:bg-[#D9D9D9] hover:border-[#D9D9D9] flex justify-center w-full">
                     <Link onClick={handleHamBurgClick} to="home" smooth={true} duration={500} >
                         Home
                     </Link>
                 </li>
-                <li className="py-6 text-4xl">
+                <li className="py-6 text-4xl border-2 rounded-md py-1 hover:text-[#202329] border-[#202329] hover:bg-[#D9D9D9] hover:border-[#D9D9D9] flex justify-center w-full">
                     <Link onClick={handleHamBurgClick} to="about" smooth={true} duration={500} >
                         About
                     </Link>
                 </li>
-                <li className="py-6 text-4xl">
+                <li className="py-6 text-4xl border-2 rounded-md py-1 hover:text-[#202329] border-[#202329] hover:bg-[#D9D9D9] hover:border-[#D9D9D9] flex justify-center w-full">
                     <Link onClick={handleHamBurgClick} to="projects" smooth={true} duration={500} >
                         Projects
                     </Link>
                 </li>
-                <li className="py-6 text-4xl">
+                <li className="py-6 text-4xl border-2 rounded-md py-1 hover:text-[#202329] border-[#202329] hover:bg-[#D9D9D9] hover:border-[#D9D9D9] flex justify-center w-full">
                     <Link onClick={handleHamBurgClick} to="skills" smooth={true} duration={500} >
                         Skills
                     </Link>
                 </li>
-                <li className="py-6 text-4xl">
+                <li className="py-6 text-4xl border-2 rounded-md py-1 hover:text-[#202329] border-[#202329] hover:bg-[#D9D9D9] hover:border-[#D9D9D9] flex justify-center w-full">
                     <Link onClick={handleHamBurgClick} to="contact" smooth={true} duration={500} >
                         Contact
                     </Link>
@@ -86,4 +86,4 @@ const Navbar = ({ mobileNavOpen, handleHamBurgClick }) => {
         </div>
     )
 }
-export default Navbar
+export default Nav

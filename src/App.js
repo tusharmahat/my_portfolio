@@ -1,7 +1,7 @@
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
-import Navbar from "./components/Navbar";
+import Nav from "./components/Nav";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import { useState } from "react";
@@ -11,8 +11,8 @@ function App() {
 
   return (
     <div >
-      <Navbar mobileNavOpen={mobileNavOpen} handleHamBurgClick={handleHamBurgClick} />
-      <Home mobileNavOpen={mobileNavOpen} handleHamBurgClick={handleHamBurgClick} />
+      <Nav mobileNavOpen={mobileNavOpen} handleHamBurgClick={handleHamBurgClick} />
+      <Home />
       <About />
       <Projects />
       <Skills />
